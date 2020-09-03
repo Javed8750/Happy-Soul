@@ -550,6 +550,7 @@ header {
         width: 230px;
         height: 260px;
         padding: 5px;
+        margin-bottom:20px;
     }
 
     .song_content #title {
