@@ -74,6 +74,12 @@ function prevSong(){
     loadSongs(songs[songIndex]);
     playsong();
 }
+// AUTOPLAY NEXT SONG //
+music.addEventListener("ended",function(){
+    songIndex = (songIndex + 1 )% songs.length;
+    loadSongs(songs[songIndex]);
+    playsong();
+});
 
 play.addEventListener("click",function(){
     isplaying ? pausesong() : playsong();
